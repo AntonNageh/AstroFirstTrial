@@ -81,9 +81,10 @@
     rightSlide?.classList.add("show");
     }, 500);
     let textContainer = document.querySelector(".text-container");
-    sliderButton?.addEventListener("click", () => {
+    [sliderButton, sliderButton2].forEach(button => {
+        button?.addEventListener("click", () => {
         textContainer?.classList.toggle("appear");
-    });
+    })});
     </script>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Homemade+Apple&display=swap');
