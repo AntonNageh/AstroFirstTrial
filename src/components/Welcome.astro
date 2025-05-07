@@ -1,210 +1,247 @@
 ---
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
+
+//
+
 ---
+<link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 
-<div id="container">
-	<img id="background" src={background.src} alt="" fetchpriority="high" />
-	<main>
-		<section id="hero">
-			<a href="https://astro.build"
-				><img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" /></a
-			>
-			<h1>
-				To get started, open the <code><pre>src/pages</pre></code> directory in your project.
-			</h1>
-			<section id="links">
-				<a class="button" href="https://docs.astro.build">Read our docs</a>
-				<a href="https://astro.build/chat"
-					>Join our Discord <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"
-						><path
-							fill="currentColor"
-							d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53s5-12.74 11.43-12.74S54 46 53.89 53s-5.05 12.69-11.44 12.69Zm42.24 0C78.41 65.69 73.25 60 73.25 53s5-12.74 11.44-12.74S96.23 46 96.12 53s-5.04 12.69-11.43 12.69Z"
-						></path></svg
-					>
-				</a>
-			</section>
-		</section>
-	</main>
-
-	<a href="https://astro.build/blog/astro-5/" id="news" class="box">
-		<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"
-			><path
-				d="M24.667 12c1.333 1.414 2 3.192 2 5.334 0 4.62-4.934 5.7-7.334 12C18.444 28.567 18 27.456 18 26c0-4.642 6.667-7.053 6.667-14Zm-5.334-5.333c1.6 1.65 2.4 3.43 2.4 5.333 0 6.602-8.06 7.59-6.4 17.334C13.111 27.787 12 25.564 12 22.666c0-4.434 7.333-8 7.333-16Zm-6-5.333C15.111 3.555 16 5.556 16 7.333c0 8.333-11.333 10.962-5.333 22-3.488-.774-6-4-6-8 0-8.667 8.666-10 8.666-20Z"
-				fill="#111827"></path></svg
-		>
-		<h2>What's New in Astro 5.0?</h2>
-		<p>
-			From content layers to server islands, click to learn more about the new features and
-			improvements in Astro 5.0
-		</p>
-	</a>
+<div class="container flex  items-center h-full relative ">
+    <img src="https://www.sliderrevolution.com/wp-content/uploads/revslider/Seafood-Store-Template/salmon-fillet-2.png" alt="" class="cursor-pointer z-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute" id="sliderButton">
+    <img src="https://www.sliderrevolution.com/wp-content/uploads/revslider/Seafood-Store-Template/f-logo-1.png" alt="" class="z-30 w-1/12 top-1/12 left-[5%] absolute">
+    <div class="bg-[#e6e0c6] w-1/2 h-full absolute">
+        <div class="bottom-0 left-1/12 -translate-y-[10dvh] absolute text-black container-fluid">
+            <h1 class="homemade-apple-regular text-[#ef6301]">Atlantic</h1> 
+            <h1 class="dela-gothic-one-regular text-[#008ba8] Salmon">Salmon</h1>
+            <p class="mt-10 text-sm text-[#89897f] font-bold">Our Atlantic Salmon is renowned for its rich flavor and tender texture, perfect for any gourmet dish.</p>
+        </div>
+   </div>
+   <div class="bg-[#efeddb] w-1/2 h-full absolute end-0 text-black">
+    <div class="h-1/2 bottom-0 end-0 w-1/2 translate-y-[10dvh] absolute">    
+        <div style="width: 100%; padding: 0; background: transparent;" class="text-container">
+            <div class="epilogue-regular">Size</div>
+            <div class="epilogue-desc">Up to 150 cm (59 inches)</div>
+          
+            <div class="epilogue-regular">Weight</div>
+            <div class="epilogue-desc">Up to 36 kg (79 lbs)</div>
+          
+            <div class="epilogue-regular">Nutritional Value</div>
+            <div class="epilogue-desc">High in omega-3 fatty acids, protein, and vitamin D</div>
+          
+            <div class="epilogue-regular">Best Cooking Methods</div>
+            <div class="epilogue-desc" style="padding: 0 36px 0 71px;">Grilling, baking, poaching</div>
+          </div>
+          
+    </div>
+   </div>
+   <div class="text-black absolute w-1/2 h-full justify-center items-center transition-all duration-1000 -right-[50%] z-40" id="rightSlide">
+    <video src="/src/assets/water.mp4" autoplay loop muted class="absolute w-full h-full object-cover"></video>
+    <div class="left-1/2">
+        <h1 class="bubbleText">Click</h1>
+        <br/><br/>
+        <h1 class="bubbleText">The Fish</h1>
+        <br/><br/>
+        <h1 class="bubbleText">To see More info</h1>
+    </div>
+    <img src="https://www.sliderrevolution.com/wp-content/uploads/revslider/Seafood-Store-Template/salmon-1.png" alt="" class="cursor-pointer z-30 top-1/2 clip-right -translate-x-1/2 scale-200 md:scale-200 lg:scale-100 md:-translate-x-1/2 -translate-y-1/2 absolute" id="sliderButton2">
+   </div>
 </div>
-
+<div class="bg-[#e6e0c6] -mt-2 container-fluid h-full relative">
+    <h1>Test</h1>
+</div>
+<script>
+    let sliderButton = document.getElementById("sliderButton");
+    let sliderButton2 = document.getElementById("sliderButton2");
+    let rightSlide = document.getElementById("rightSlide");
+    [sliderButton, sliderButton2].forEach(button => {
+    button?.addEventListener("click", () => {
+        rightSlide?.classList.toggle("show");
+    })
+    })
+    setTimeout(() => {
+    rightSlide?.classList.add("show");
+    }, 500);
+    let textContainer = document.querySelector(".text-container");
+    sliderButton?.addEventListener("click", () => {
+    textContainer?.classList.toggle("appear");
+    });
+  </script>
 <style>
-	#background {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		filter: blur(100px);
-	}
+    @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Homemade+Apple&display=swap');
+    .homemade-apple-regular {
+    font-family: "Homemade Apple", cursive;
+    font-weight: 400;
+    font-style: normal;
+    }
+    .text-container div {
+        clip-path: inset(0 100% 0 0);
+        transition: clip-path 2s ease-in-out;
+    }
+    
+    .text-container.appear div {
+        clip-path: inset(0 0 0 0);
+    }
+    .description h1{
+        color: #ef6301;
+    }
+    .bubbleText{
+        pointer-events: none;
+        font-family: Epilogue;
+        font-size: 13px;
+        font-weight: 700;
+        color: rgb(240, 236, 219);
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+        line-height: 30px;
+        text-align: center;
+        white-space: normal;
+        overflow: visible;
+        right: 0;
+        margin-top: 30%;
+        margin-right: 10%;
+        width: fit-content;
+        padding: 2px 10px 0px;
+        height: auto;
+        float: none;
+        clear: none;
+        border-style: solid;
+        border-width: 1px 0px 0px;
+        border-color: rgba(255, 255, 255, 0.25);
+        z-index: 7;
+        border-radius: 50px;
+        position: absolute !important;
+        vertical-align: inherit;
+        transform-origin: 50% 50%;
+        translate: none;
+        rotate: none;
+        scale: none;
+        visibility: inherit;
+        opacity: 1;
+        transform: perspective(600px) translate3d(0px, 0px, 0px);
+        backdrop-filter: blur(5px) brightness(110%);
+        background: rgba(0, 38, 58, 0.3);
+    }
+    .Salmon {
+        pointer-events: none;
+        font-family: "Dela Gothic One";
+        font-size: 5dvw;
+        font-weight: 400;
+        color: rgb(0, 140, 168);
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: -1.67188px;
+        line-height: 59px;
+        text-align: left;
+        white-space: normal;
+        overflow: visible;
+        margin: 0px;
+        width: auto;
+        height: auto;
+        float: none;
+        clear: none;
+        z-index: 9;
+        position: relative;
+        vertical-align: inherit;
+        transform-origin: 50% 50%;
+        display: block;
+        background: transparent;
+        translate: none;
+        rotate: none;
+        scale: none;
+        visibility: inherit;
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+    .dela-gothic-one-regular {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    .epilogue-desc {
+        font-family: Epilogue; 
+        font-size: 13px; 
+        font-weight: 500; 
+        color: rgb(114, 114, 114); 
+        padding: 0 36px 21px 71px;
+    }
+    .epilogue-regular {
+        font-family: 'Dela Gothic One'; 
+        font-size: 17px; 
+        font-weight: 400; 
+        color: rgb(244, 97, 0); 
+        padding: 0 0 7px 71px;
+    }
+    #rightSlide {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 1s ease-in-out;
+    }
 
-	#container {
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-		height: 100%;
-	}
+    #rightSlide.show {
+    transform: translateX(0);
+    }
+    .clip-right {
+    overflow: hidden;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    }
+    .clip-left {
+    overflow: hidden;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    }
+    #container {
+        font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+        height: 100%;
+    }
 
-	main {
-		height: 100%;
-		display: flex;
-		justify-content: center;
-	}
+    main {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    h1 {
+        font-size: 22px;
+        margin-top: 0.25em;
+    }
+    pre {
+        font-family:
+            ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
+            monospace;
+        font-weight: normal;
+        background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin: 0;
+    }
 
-	#hero {
-		display: flex;
-		align-items: start;
-		flex-direction: column;
-		justify-content: center;
-		padding: 16px;
-	}
+    h2 {
+        margin: 0 0 1em;
+        font-weight: normal;
+        color: #111827;
+        font-size: 20px;
+    }
 
-	h1 {
-		font-size: 22px;
-		margin-top: 0.25em;
-	}
+    @media screen and (max-height: 368px) {
+    }
 
-	#links {
-		display: flex;
-		gap: 16px;
-	}
+    @media screen and (max-width: 768px) {
+        #container {
+            display: flex;
+            flex-direction: column;
+        }
 
-	#links a {
-		display: flex;
-		align-items: center;
-		padding: 10px 12px;
-		color: #111827;
-		text-decoration: none;
-		transition: color 0.2s;
-	}
-
-	#links a:hover {
-		color: rgb(78, 80, 86);
-	}
-
-	#links a svg {
-		height: 1em;
-		margin-left: 8px;
-	}
-
-	#links a.button {
-		color: white;
-		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
-		box-shadow:
-			inset 0 0 0 1px rgba(255, 255, 255, 0.12),
-			inset 0 -2px 0 rgba(0, 0, 0, 0.24);
-		border-radius: 10px;
-	}
-
-	#links a.button:hover {
-		color: rgb(230, 230, 230);
-		box-shadow: none;
-	}
-
-	pre {
-		font-family:
-			ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
-			monospace;
-		font-weight: normal;
-		background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-		margin: 0;
-	}
-
-	h2 {
-		margin: 0 0 1em;
-		font-weight: normal;
-		color: #111827;
-		font-size: 20px;
-	}
-
-	p {
-		color: #4b5563;
-		font-size: 16px;
-		line-height: 24px;
-		letter-spacing: -0.006em;
-		margin: 0;
-	}
-
-	code {
-		display: inline-block;
-		background:
-			linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
-			linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
-		border-radius: 8px;
-		border: 1px solid transparent;
-		padding: 6px 8px;
-	}
-
-	.box {
-		padding: 16px;
-		background: rgba(255, 255, 255, 1);
-		border-radius: 16px;
-		border: 1px solid white;
-	}
-
-	#news {
-		position: absolute;
-		bottom: 16px;
-		right: 16px;
-		max-width: 300px;
-		text-decoration: none;
-		transition: background 0.2s;
-		backdrop-filter: blur(50px);
-	}
-
-	#news:hover {
-		background: rgba(255, 255, 255, 0.55);
-	}
-
-	@media screen and (max-height: 368px) {
-		#news {
-			display: none;
-		}
-	}
-
-	@media screen and (max-width: 768px) {
-		#container {
-			display: flex;
-			flex-direction: column;
-		}
-
-		#hero {
-			display: block;
-			padding-top: 10%;
-		}
-
-		#links {
-			flex-wrap: wrap;
-		}
-
-		#links a.button {
-			padding: 14px 18px;
-		}
-
-		#news {
-			right: 16px;
-			left: 16px;
-			bottom: 2.5rem;
-			max-width: 100%;
-		}
-
-		h1 {
-			line-height: 1.5;
-		}
-	}
+        h1 {
+            line-height: 1.5;
+        }
+    }
 </style>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
