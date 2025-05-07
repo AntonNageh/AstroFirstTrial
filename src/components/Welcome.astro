@@ -45,8 +45,28 @@
     <img src="https://www.sliderrevolution.com/wp-content/uploads/revslider/Seafood-Store-Template/salmon-1.png" alt="" class="cursor-pointer z-30 top-1/2 clip-right -translate-x-1/2 scale-200 md:scale-200 lg:scale-100 md:-translate-x-1/2 -translate-y-1/2 absolute" id="sliderButton2">
    </div>
 </div>
-<div class="bg-[#e6e0c6] -mt-2 container-fluid h-full relative">
-    <h1>Test</h1>
+<div class="bg-[#e6e0c6] container-fluid md:h-full lg:h-[120%]">
+    <section class="seafood-section">
+        <div class="seafood-row">
+          <img src="https://images.pexels.com/photos/842142/pexels-photo-842142.jpeg" alt="Salmon">
+          <div class="text">
+            <h2 class="epilogue-regular" style="padding: 0;">🐟 Salmon – The Super Swimmer</h2>
+            <p class="epilogue-desc" style="padding: 0;">Salmon are fishy Olympians—racing upstream like they're on a mission. Pair them with a creamy dill sauce and you've got a powerhouse on your plate.</p>
+          </div>
+        </div>
+      
+        <div class="seafood-row reverse">
+          <div class="text">
+            <h2 class="epilogue-regular" style="padding: 0;">🦀 Crab – The Sidewalking Gourmet</h2>
+            <p class="epilogue-desc" style="padding: 0;">Crabs may move sideways, but their flavor hits straight on—especially in a buttery garlic crab boil.</p>
+          </div>
+          <img src="https://images.pexels.com/photos/76966/crab-red-klippenkrabbe-grapsus-grapsus-shellfish-76966.jpeg?cs=srgb&dl=pexels-pixabay-76966.jpg&fm=jpg" alt="Crab">
+        </div>
+      
+        <!-- Repeat alternating rows for lobster, clownfish, etc. -->
+      </section>
+      
+      
 </div>
 <script>
     let sliderButton = document.getElementById("sliderButton");
@@ -62,11 +82,68 @@
     }, 500);
     let textContainer = document.querySelector(".text-container");
     sliderButton?.addEventListener("click", () => {
-    textContainer?.classList.toggle("appear");
+        textContainer?.classList.toggle("appear");
     });
-  </script>
+    </script>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Homemade+Apple&display=swap');
+    .seafood-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.seafood-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.seafood-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.seafood-row img {
+  width: 45%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.seafood-row .text {
+  width: 50%;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .seafood-row,
+  .seafood-row.reverse {
+    flex-direction: column;
+  }
+
+  .seafood-row img,
+  .seafood-row .text {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+
+    .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    width: inherit;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    padding: 10px;
+    }
+
+    .seafood-item:hover .overlay {
+    transform: translateY(0);
+    }
+
     .homemade-apple-regular {
     font-family: "Homemade Apple", cursive;
     font-weight: 400;
